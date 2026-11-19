@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Fix: the panel no longer throws an error on load (a listener was bound to a Manual-mode element that does not exist). Crop mode itself is unchanged. Not yet tested in Photoshop.
+
 ## Open-source release
 
 - BatchCrop is now free and open source under the MIT license.

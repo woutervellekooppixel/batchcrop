@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Set the radio button based on the saved configuration
     if (conFig.cropMode === 'manual') {
-        manualMode.checked = true;
+        if (manualMode) manualMode.checked = true;
     } else {
         autoMode.checked = true;  // Default to 'auto'
     }
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Handle the change event for the manual mode radio button
-    manualMode.addEventListener("change", function() {
+    if (manualMode) manualMode.addEventListener("change", function() {
         if (this.checked) {
             conFig.cropMode = 'manual';
             save();  // Save the new state

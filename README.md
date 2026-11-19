@@ -25,7 +25,7 @@ BatchCrop used to be a paid plugin. It is now free and open source under the MIT
 
 ### Option 1: install the package (recommended)
 
-1. Download [`dist/batchcrop-1.0.1.ccx`](dist/batchcrop-1.0.1.ccx).
+1. Download [`dist/batchcrop-1.0.2.ccx`](dist/batchcrop-1.0.2.ccx).
 2. Double-click the `.ccx` file. The Creative Cloud desktop app opens and asks to install the plugin locally. Confirm.
 3. Restart Photoshop.
 4. Open the panel from the **Plugins** menu: **Plugins › Wouter.Photo Batch Crop**. If it is not there, check that the Creative Cloud desktop app shows the plugin as installed.
@@ -36,7 +36,7 @@ For developers who want to run or change the code.
 
 1. Install **UXP Developer Tool** from the Creative Cloud desktop app.
 2. In Photoshop, enable Developer Mode in the Plugins preferences, so the **Plugins › Development** menu becomes available.
-3. In UXP Developer Tool, click **Add Plugin…** and select `plugin/manifest.json` from this repository (or from the unzipped `dist/batchcrop-1.0.1.zip`).
+3. In UXP Developer Tool, click **Add Plugin…** and select `plugin/manifest.json` from this repository (or from the unzipped `dist/batchcrop-1.0.2.zip`).
 4. Click **Load**, then open **Plugins › Wouter.Photo Batch Crop** in Photoshop.
 
 ## How to use
@@ -93,10 +93,10 @@ The files in `dist/` were made from the `plugin/` folder:
 
 ```sh
 # .ccx: the plugin files at the root of a zip archive
-cd plugin && zip -X -D -r ../dist/batchcrop-1.0.1.ccx manifest.json index.html main.js style.css icons && cd ..
+cd plugin && zip -X -D -r ../dist/batchcrop-1.0.2.ccx manifest.json index.html main.js style.css icons && cd ..
 
 # .zip: the plugin folder itself, for UXP Developer Tool
-ditto -c -k --keepParent --norsrc --noextattr --noqtn --noacl plugin dist/batchcrop-1.0.1.zip
+ditto -c -k --keepParent --norsrc --noextattr --noqtn --noacl plugin dist/batchcrop-1.0.2.zip
 ```
 
 The `id` in `manifest.json` is the plugin ID that Adobe assigned to BatchCrop. If you publish your own fork, request your own plugin ID from Adobe and replace it.

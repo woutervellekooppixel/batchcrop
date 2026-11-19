@@ -1,7 +1,7 @@
 {
   "id": "a22459df",
   "name": "Wouter.Photo Batch Crop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.html",
   "label": {
     "default": "Wouter.Photo Batch Crop"
