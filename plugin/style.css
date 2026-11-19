@@ -1,0 +1,283 @@
+body {
+  color: white;
+  padding: 0 16px;
+}
+
+sp-heading {
+  width: 60%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+
+.inputSec {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.inputs {
+  display: inline-block;
+  width: 70%;
+}
+
+.ratio {
+  min-width: 70px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 5px;
+  padding: 10px 0px;
+}
+
+
+section {
+  margin-bottom: 10px;
+}
+
+.main {
+  text-align: center;
+}
+
+.run {
+  width: 100%;
+	border-radius: 0px;
+}
+
+sp-button,
+sp-radio-group,
+sp-checkbox {
+  cursor: pointer;
+}
+
+
+sp-checkbox {
+  height: 15px;
+}
+
+.progress {
+  width: 100%;
+  opacity: 0;
+}
+
+.progressText {
+  opacity: 0;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.remove {
+  height: 15px;
+  width: 15px;
+  opacity: 0.8;
+  margin: 8px 8px 0px 0px;
+}
+
+
+
+.ratio:hover .remove {
+  opacity: 1;
+}
+
+
+.closeDoc {
+  margin-left: 5px;
+  top: -6px;
+}
+
+.customRatio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.crInput {
+  height: 25px;
+  width: 55px;
+  padding: 5px;
+}
+
+#inputBtn,
+#saveBtn {
+  height: 23px;
+  font-size: 12px;
+  border-radius: 0px;
+}
+
+sp-heading {
+  height: 100px;
+}
+.remove{
+  fill: var(--uxp-host-text-color);
+}
+@media (prefers-color-scheme: dark),
+(prefers-color-scheme: darkest) {
+  sp-heading {
+    background-image: url('./icons/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  
+}
+
+
+@media (prefers-color-scheme: light),
+(prefers-color-scheme: lightest) {
+  sp-heading {
+    background: url('./icons/logo-b.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 10px; /* Reduced margin */
+    padding: 10px; /* Reduced padding */
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjusting the body background color to match the design */
+body {
+    background-color: #444444; /* Match the darker overall background */
+    color: white;
+    padding: 0 16px;
+}
+
+/* Update other specific styles if necessary */
+sp-heading {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.customRatio input, .customRatio button {
+    background-color: #555555; /* Slightly darker input fields */
+    border: 1px solid #777777;
+    color: white;
+}
+
+/* For radio buttons and checkboxes */
+sp-radio, sp-checkbox {
+    margin-right: 10px;
+    color: white;
+}
+
+/* Button styling */
+sp-button {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+sp-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Make the entire plugin scrollable */
+body {
+    max-height: 100vh; /* Viewport height to make it scrollable within the plugin's window */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: #444444; /* Match the darker overall background */
+    color: white;
+    padding: 0 16px;
+    margin: 0; /* Remove default margin */
+}
+
+/* Customize Scrollbar (Webkit-based browsers only) */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar color */
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Scrollbar color on hover */
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 20000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Black with opacity for background */
+}
+
+.modal-content {
+  background-color: #1e3a5f; /* Dark blue background for the modal content */
+  margin: 15% auto; /* Centered */
+  padding: 20px;
+  border: 2px solid #007bff; /* Blue border for consistency */
+  width: 80%; /* Adjust width to fit content */
+  max-width: 600px; /* Optional max-width for large screens */
+  text-align: center;
+  color: #f0f0f0; /* Light text for contrast */
+  font-family: 'Arial', sans-serif; /* A clean and professional font */
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #007bff; /* Bright blue for the heading */
+}
+
+.modal-content p, .modal-content ul {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.modal-content ul li {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.got-it-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue background for the button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  display: block; /* Ensures the button takes up its own line */
+  text-align: center; /* Center text inside the button */
+}
+
+.got-it-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+#ratios {
+	margin-top: -15px;
+	padding: 5px;
+}

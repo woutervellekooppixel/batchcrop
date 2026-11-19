@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <sp-heading><img class="logo" src="icons/logo.jpg" alt=""></sp-heading>
+  <sp-body id="body">
+    <section id="inputSec" class="inputSec">
+      <sp-radio-group column id="inputOptions">
+        <sp-label slot="label">Source:</sp-label>
+        <sp-radio value="openDoc" checked>Open documents<sp-checkbox disabled class="closeDoc" id="closeDoc">Close
+            After Crop</sp-checkbox></sp-radio>
+        <sp-radio value="folder"> <sp-button disabled variant="cta" id="inputBtn" class="browse-btn">BROWSE</sp-button> </sp-radio>
+      </sp-radio-group>
+    </section>
+	  <section class="customRatio">
+  <sp-label slot="label">Add Ratio:</sp-label>
+  <div style="display: flex; align-items: center;">
+    <input type="number" placeholder="Width" id="crWidth" class="crInput"></input>
+    <span style="margin: 0 5px;">:</span>
+    <input type="number" placeholder="Height" id="crHeight" class="crInput"></input>
+    <button id="crAdd" class="crInput" disabled>Add</button>
+  </div>
+</section>
+    <section>
+      <sp-radio-group row id="ratios">
+      </sp-radio-group>
+    </section>
+    <section>
+		<sp-label slot="label">Crop Mode:</sp-label><br>
+ <sp-radio-group row id="Cropmodus">
+	     <sp-radio name="cropMode" value="auto" id="autoMode" checked>Auto</sp-radio>
+    <sp-radio name="cropMode" class="ratioa" id="userWait">Manual</sp-radio>
+      </sp-radio-group>
+	</section>
+    <section>
+      <sp-radio-group row id="outputType">
+        <sp-label slot="label">File Type:</sp-label>
+        <sp-radio value="jpg" checked>JPG</sp-radio>
+        <sp-radio value="png">PNG</sp-radio>
+      </sp-radio-group>
+    </section>
+    <section>
+      <sp-radio-group column id="outputFolders">
+        <sp-label slot="label">Destination:</sp-label>
+        <sp-radio value="same" checked>Same folder</sp-radio>
+        <sp-radio value="custom"> <sp-button disabled variant="cta" id="saveBtn" class="browse-btn">BROWSE</sp-button> </sp-radio>
+      </sp-radio-group>
+    </section>
+    <section id="main" class="main">
+      <sp-button disabled variant="cta" class="run" id="runBtn">BATCH CROP</sp-button>
+    </section>
+    <sp-progressbar max="100" value="50" class="progress" id="progress"></sp-progressbar>
+    <sp-body class="progressText" id="progressText"></sp-body>
+  </sp-body>
+<!-- Modal Structure -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <p>When you're happy with your crop, <br>hit Enter to continue to the next photo.</p>
+    <label><input type="checkbox" id="neverShow">Never show this again</label>
+    <button id="gotItBtn" class="got-it-btn">Got It</button>
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="welcomeModal" class="modal">
+  <div class="modal-content rock-n-roll-style">
+    <h2>Welcome to Wouter.Photo Batch Crop!</h2>
+    <p>Let's rock your crops with the best aspect ratios already pre-set for you:</p>
+    <ul>
+      <li><strong>1:1</strong> - LinkedIn</li>
+      <li><strong>9:16</strong> - Instagram stories and TikTok</li>
+      <li><strong>4:5</strong> - Instagram posts</li>
+    </ul>
+    <p>Get ready to batch crop!</p>
+    <button id="closeModalBtn" class="got-it-btn">Let's Go!</button>
+  </div>
+</div>
+
+<!-- Done Modal -->
+<div id="doneModal" class="modal">
+  <div class="modal-content">
+    <h2>All done!</h2>
+    <p id="doneText"></p>
+    <button id="doneBtn" class="got-it-btn">Yay!</button>
+  </div>
+</div>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>

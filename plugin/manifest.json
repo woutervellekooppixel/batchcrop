@@ -1,0 +1,168 @@
+{
+  "id": "a22459df",
+  "name": "Wouter.Photo Batch Crop",
+  "version": "1.0.1",
+  "main": "index.html",
+  "label": {
+    "default": "Wouter.Photo Batch Crop"
+  },
+  "host": {
+    "app": "PS",
+    "minVersion": "22.0.0",
+    "data": {
+      "apiVersion": 2
+    }
+  },
+  "requiredPermissions": {
+    "allowCodeGenerationFromStrings": true,
+    "network": {
+      "domains": [
+        "https://*.adobe.com"
+      ]
+    },
+    "localFileSystem": "fullAccess",
+    "launchProcess": {
+      "schemes": [
+        "http",
+        "https"
+      ],
+      "extensions": [
+        ".svg",
+        ".png"
+      ]
+    }
+  },
+  "featureFlags": {
+    "enableSWCSupport": true,
+    "enableAlerts": true
+  },
+  "manifestVersion": 5,
+  "entrypoints": [
+    {
+      "type": "command",
+      "id": "resetPlugin",
+      "label": "Reset Plugin"
+    },
+    {
+      "type": "command",
+      "id": "reloadPlugin",
+      "label": "Reload Plugin"
+    },
+    {
+      "type": "panel",
+      "id": "WouterPhotoBatchCrop",
+      "minimumSize": {
+        "width": 340,
+        "height": 750
+      },
+      "maximumSize": {
+        "width": 320,
+        "height": 750
+      },
+      "preferredDockedSize": {
+        "width": 320,
+        "height": 750
+      },
+      "preferredFloatingSize": {
+        "width": 320,
+        "height": 750
+      },
+      "icons": [
+        {
+          "width": 23,
+          "height": 23,
+          "path": "icons/light.png",
+          "scale": [
+            1
+          ],
+          "theme": [
+            "dark",
+            "darkest"
+          ],
+          "species": [
+            "generic"
+          ]
+        },
+        {
+          "width": 23,
+          "height": 23,
+          "path": "icons/dark.png",
+          "scale": [
+            1
+          ],
+          "theme": [
+            "lightest",
+            "light"
+          ],
+          "species": [
+            "generic"
+          ]
+        }
+      ],
+      "label": {
+        "default": "Wouter.Photo Batch Crop"
+      }
+    }
+  ],
+  "icons": [
+    {
+      "width": 23,
+      "height": 23,
+      "path": "icons/light.png",
+      "scale": [
+        1
+      ],
+      "theme": [
+        "darkest",
+        "dark",
+        "medium"
+      ]
+    },
+    {
+      "width": 23,
+      "height": 23,
+      "path": "icons/dark.png",
+      "scale": [
+        1
+      ],
+      "theme": [
+        "lightest",
+        "light"
+      ],
+      "species": [
+        "pluginList"
+      ]
+    },
+    {
+      "width": 48,
+      "height": 48,
+      "path": "icons/dark.png",
+      "scale": [
+        1
+      ],
+      "theme": [
+        "medium",
+        "light",
+        "lightest"
+      ],
+      "species": [
+        "pluginList"
+      ]
+    },
+    {
+      "width": 48,
+      "height": 48,
+      "path": "icons/light.png",
+      "scale": [
+        1
+      ],
+      "theme": [
+        "darkest",
+        "dark"
+      ],
+      "species": [
+        "pluginList"
+      ]
+    }
+  ]
+}
