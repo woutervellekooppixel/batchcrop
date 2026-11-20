@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+- Renamed to Remix (formerly BatchCrop). The plugin and its panel are now called Remix; saved settings carry over. No other changes. Not yet tested in Photoshop.
+
 ## 1.0.2
 
 - Fix: the panel no longer throws an error on load (a listener was bound to a Manual-mode element that does not exist). Crop mode itself is unchanged. Not yet tested in Photoshop.

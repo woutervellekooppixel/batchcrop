@@ -1,10 +1,10 @@
 {
   "id": "a22459df",
-  "name": "Wouter.Photo Batch Crop",
-  "version": "1.0.2",
+  "name": "Remix",
+  "version": "1.1.0",
   "main": "index.html",
   "label": {
-    "default": "Wouter.Photo Batch Crop"
+    "default": "Remix"
   },
   "host": {
     "app": "PS",
@@ -100,7 +100,7 @@
         }
       ],
       "label": {
-        "default": "Wouter.Photo Batch Crop"
+        "default": "Remix"
       }
     }
   ],
