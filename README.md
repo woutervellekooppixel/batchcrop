@@ -23,6 +23,14 @@ BatchCrop used to be a paid plugin. It is now free and open source under the MIT
 
 ## Install
 
+### From Terminal (Mac)
+
+One line. The Creative Cloud desktop app opens and installs the plugin in Photoshop:
+
+```sh
+curl -fsSL https://github.com/woutervellekooppixel/batchcrop/releases/latest/download/BatchCrop.ccx -o /tmp/BatchCrop.ccx && open /tmp/BatchCrop.ccx
+```
+
 ### Option 1: install the package (recommended)
 
 1. Download [`dist/batchcrop-1.0.2.ccx`](dist/batchcrop-1.0.2.ccx).
